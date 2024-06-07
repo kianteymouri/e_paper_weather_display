@@ -76,10 +76,10 @@ print('Initializing and clearing screen.')
 epd.init()
 epd.Clear()
 
-API_KEY = '******API KEY*******'
+API_KEY = 'cfaa39d11b8caac26fcf4029117a698f'
 LOCATION = '*******'
-LATITUDE = '*******'
-LONGITUDE = '*******'
+LATITUDE = '37.268108'
+LONGITUDE = '-122.019447'
 UNITS = 'imperial'
 CSV_OPTION = True # if csv_option == True, a weather data will be appended to 'record.csv'
 
@@ -215,7 +215,7 @@ while True:
 
     ## Add a reminder to take out trash on Mon and Thurs
     weekday = datetime.today().weekday()
-    if weekday == 0 or weekday == 3:
+    if weekday == 3:
         draw.rectangle((345, 13, 705, 55), fill =black)
         draw.text((355, 15), 'TAKE OUT TRASH TODAY!', font=font30, fill=white)
         
